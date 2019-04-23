@@ -1,0 +1,10 @@
+1、决策系统 用户名：admin 密码：123456
+
+2、激活码：d9ed372a-e375642cb-b1fd-62d66ad82a59
+
+3、把FineReport_9.0.rar文件解压后，放到根目录里，比方D盘.
+
+4、打开设计器路径：D:\FineReport_9.0\bin\ 目录下的双击 designer.exe 这个文件。
+
+5、安装的服务器需要是64位的电脑。
+注册码： wv5rc-uxvpz-e33-nr4694qs2
