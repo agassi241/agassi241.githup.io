@@ -1,2 +1,13 @@
 https://www.cnblogs.com/blackchain/p/4877132.html
 https://blog.csdn.net/qq_24755999/article/details/78722948
+目前Java web工程通常都是通过IDEA module模块化，分成xxx-admin、xxx-core、xxx-dao、xxx-web等模块，多个module通过maven管理。这几个模块打包一起运行，通常只有xxx-web是个web工程，提供springMVC方式对外提供访问。 自己使用IDEA也创建了个 多module的工程，出现了一些问题。
+我是报出ClassNotFoundException: org.springframework.web.filter.CharacterEncodingFilter
+出现这个问题，是因为工程的jar包未被部署。但检查pom.xml里面的dependency感觉都正常。 注意：在多module的工程，通常在部署到Tomcat上时，都是部署xxx-web这个module模块。
+IDEA菜单依次操作 File >Project Structure >Artifacts >Output Layout >Available Elements
+我们先ctrl+shift+alt+s打开Project Structure窗口，选择Artifacts，选择要打包部署的项目，在Output Layout –> Web-INF查看是否有lib目录，如果右边Available Elements窗口还显示有jar包，说明这些jar包未添加，则应右击选择Put into Output Root(put into WEB_INF/lib)，这样就OK了
+接着遇到了另一个问题
+没有检测到要部署的web模块，是因为Tomcat执行deployed时，找不到web模块的Artifact，依次再次进入File >Project Structure >Artifacts
+将Output directory 指定到web module的target目录
+多module工程，还需要注意 WEB-INF/web.xml的位置配置，进入File >Project Structure >Modules
+可以看到你工程的所有module，可以点击+号给其中一个module新建一个Web 而使其成为web模块，点击中间的铅笔图标，编辑指定WEB-INF/web.xml的位置。我的配置地址为：磁盘路径/工程名/web模块名/src/main/webapp/WEB-INF/web.xml。
+右侧窗口 中下方的Web Resource Directories，双击修改指定路径到：工程名/web模块名/src/main/webapp/WEB-INF/web.xml。
