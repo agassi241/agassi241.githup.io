@@ -1,0 +1,386 @@
+﻿body{
+	text-align:center;
+	font-family:"微软雅黑";
+	letter-spacing:0.05em;
+	color:#575757;
+	font-size:16px;
+	margin:0px;
+	width:100vw;
+}
+a{
+	text-decoration:none;
+	cursor:pointer;
+	color:#299ceb;
+}
+a:hover{
+	text-decoration:underline;
+	color:#c60000;
+}
+hr{	
+	border:0px;
+	border-bottom:1px #b0b0b0 solid;
+	margin:50px 0px 30px 0px;
+}
+p{
+	text-align:left;
+	line-height:1.6;
+	text-indent:2em;
+}
+.divTop{
+	width:100%;
+	height:70px;
+	text-align:center;
+	background-color:#000000;
+	position:fixed; 
+	top:0;
+}
+.divTopInner{
+	width:800px;
+	text-align:left;
+	color:#ffffff;
+	line-height:70px;
+	margin:auto;
+}
+.divTopInnerCaption{
+	width:650px;
+	font-size:20px;	
+	float:left;
+}
+.divTopInnerNtko{
+	width:50px;
+	font-size:14px;
+	text-align:center;
+	float:left;
+	cursor:pointer;
+}
+.divTopInnerNtko:hover{
+	background-color:#c60000;
+}
+.divTopInnerHome{
+	width:100px;
+	font-size:14px;
+	text-align:center;
+	float:left;
+	cursor:pointer;
+}
+.divTopInnerHome:hover{
+	background-color:#0f51d6;
+}
+
+.divTopInner a{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+.divTitle{
+	width:100%;
+	height:80px;
+	line-height:80px;
+	border-bottom:1px #d2d2d2 solid;
+	margin-top:70px;
+}
+.divTitle_body{
+	width:800px;
+	text-align:left;
+	color:#c60000;
+	font-size:36px;
+	font-weight:bold;
+	margin:auto;
+}
+.divTitle_caption{
+	width:400px;
+	float:left;
+}
+.divTitle_search{
+	width:398px;
+	height:40px;
+	float:left;
+	margin:20px 0px 0px 0px;
+	border:1px #d2d2d2 solid;
+}
+.divTitle_search_input{
+	margin:-26px 2px 0px 10px;
+	float:left;
+}
+.divTitle_search_input input[type=text]{
+	font-size:20px;
+	width:345px;
+	height:28px;
+	border-width:0px;
+	color:#9a9a9a;
+}
+.divTitle_search_input input[type=text]:hover{
+	outline:none;
+}
+.divTitle_search_input input[type=text]:focus{
+	outline:none;
+}
+.divTitle_search_img{
+	margin:-20px 0px 0px 0px;
+}
+.divTitle_search_img img{
+	cursor:pointer;
+}
+.divmain{
+	width:800px;
+	margin:auto;
+	text-align:left;
+}
+
+/* 问题列表样式 */
+.QuestionList{
+	width:800px;
+	margin:0px 0px 50px 0px;
+}
+.QuestionItem
+{
+	color:#606060;
+	line-height:36px;
+	border-bottom:1px #d7d7d7 dashed;
+	cursor:pointer;
+}
+.QuestionList img{
+	margin:0px 10px 0px 0px;
+}
+.QuestionItem a{
+	color:#6f6f6f;
+}
+.QuestionItem a:hover{
+	color:#c60000;
+}
+
+/* 解决方案列表样式 */
+.SolutionTitle{
+	font-size:24px;
+	color:#c60000;
+	font-weight:bold;
+	margin:0px 0px 20px 0px;
+	background-color:#d2d2d2;
+	width:100%;
+	height:70px;
+	line-height:70px;
+}
+.SolutionTitleLogo{
+	font-size:40px;
+	color:#ffffff;
+	font-weight:bold;
+	background-color:#c60000;
+	width:70px;
+	height:70px;
+	line-height:70px;
+	text-align:center;
+	float:left;
+}
+.SolutionTitleText{
+	color:#575757;
+	font-weight:bold;
+	width:715px;
+	height:70px;
+	line-height:70px;
+	float:left;
+	margin:0px 0px 0px 10px;
+	padding-right:5px;
+}
+.SolutionTitleTextDL{
+	color:#575757;
+	font-weight:bold;
+	width:715px;
+	height:70px;
+	line-height:70px;
+	float:left;
+	margin:0px 0px 0px 10px;
+	line-height:1.5;
+	font-size:22px;
+	padding-right:5px;
+}
+.SolutionCaption{
+	width:160px;
+	height:40px;
+	line-height:40px;
+	font-size:20px;
+	font-weight:bold;
+	color:#ffffff;
+	text-align:center;
+	background:#c60000;
+	margin:50px 0px 0px 0px;
+}
+.SolutionCaptionLine{
+	height:2px;
+	width:800px;
+	margin:auto;
+	background:#c60000;	
+	margin:0px 0px 10px 0px;	
+}
+.SolutionCaption2
+{
+	font-size:20px;
+	background-color:#d2d2d2;
+	color:#575757;
+	height:50px;
+	line-height:50px;
+	margin:0px 0px 5px 0px;
+	padding:0px 0px 0px 15px;
+	font-weight:bold;
+}
+.SolutionBody{
+	margin:0px 0px 10px 0px;
+	line-height:36px;
+	text-align:center;
+}
+.SolutionBottom{
+	margin:0px 0px 10px 740px;
+	cursor:pointer;
+}
+
+/* 解决方案详细说明样式 */
+.DetailInfo{
+	display:none;
+	line-height:36px;
+	width:800px;
+	margin:auto;
+}
+.DetailItem{
+	text-align:center;
+	line-height:30px;
+	display:none;
+}
+.DetailItemCaption{
+	border-left:4px #c60000 solid;	
+	line-height:20px;
+	text-align:left;
+	font-weight:bold;
+	font-size:18px;
+	background-color:#dfdfdf;
+	padding:15px 0px 15px 10px;
+	color:#575757;
+	width:786px;
+}
+.DualCore{
+	width:650px;
+}
+.DualCoreList{
+	width:650px;
+	height:260px;
+	margin:0px 0px 0px 75px;
+}
+.DualCoreItem {
+	width:120px;
+	height:120px;
+	float:left;
+	cursor:pointer;
+	margin:5px;
+}
+.DualCoreItem img{
+	margin:10px 0px 0px 0px;
+	border:0px;
+}
+.DualCoreItem:hover{
+	background-color:#d7d7d7;
+}
+.DualCoreDetail{
+	width:100%;
+}
+.DualCoreDetailItem{
+	display:none;
+}
+.DualCoreDetailItem img{
+	border:0px;
+}
+
+/* 附件列表样式 */
+.Attach{
+	width:758px;
+	border:1px #d0d0d0 solid;
+	padding:0px 20px 10px 20px;
+	text-align:left;
+}
+.AttachTitle{
+	text-align:left;
+	border-bottom:1px #e0e0e0 solid;
+	line-height:50px;
+	height:50px;
+	margin:auto auto 10px auto;
+}
+.AttachItem{
+	clear:both;
+	height:30px;
+	line-height:30px;
+	text-align:left;
+	width:100%;
+	margin:0px auto auto 10px;
+}
+.AttachImg{
+	height:30px;
+	float:left;
+	margin:3px 10px auto auto;
+}
+.AttachCaption{
+	height:30px;
+	float:left;
+}
+
+/* 其他样式 */
+.Message{
+	background-color:#fffa73;
+	width:700px;
+	color:red;
+	margin:auto auto 20px auto;
+	overflow:hidden;
+}
+.Messagelogo{
+	width:60px;
+	float:left;
+	margin-top:10px;
+}
+.Messagetext{
+	float:left;
+	text-align:left;
+	line-height:1.6;
+	padding:10px 10px 10px 0px;
+	width:630px;
+}
+.KeyPoint{
+	font-weight:bold;
+	color:red;
+}
+.PS{
+	background-color:#edffde;
+	width:700px;
+	margin:auto auto 10px auto;
+}
+.PSlogo{
+	width:50px;
+	height:50px;
+	line-height:50px;
+	background-color:#377c00;
+	border-bottom:1px #377c00 solid;
+	margin:0px 0px 10px 0px;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:22px;
+	float:left;
+}
+.PScaption{
+	width:650px;
+	height:50px;
+	line-height:50px;
+	color:#377c00;
+	font-weight:bold;
+	float:left;
+	text-align:left;
+	border-bottom:1px #377c00 solid;
+	margin:0px 0px 10px 0px;
+	text-indent:0.5em;
+	font-size:18px;
+}
+.Code{
+	background-color:#f5f5f5;
+	border:1px #c9c9c9 solid;
+	width:658px;
+	color:#1e6994;
+	font-size:14px;
+	text-align:left;
+	word-break:break-all;
+	margin:auto auto 20px auto;
+	padding:10px 20px 10px 20px;
+}
