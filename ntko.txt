@@ -1,0 +1,5 @@
+问题：office2010打开某些不受信任服务器的文档会提示受保护的视图 
+解决方案：
+首先点击系统的开始菜单，选择“运行”命令后输入regedit命令，从而打开Windows系统的注册表编辑器。在注册表窗口的左侧项目中，依次展开注册表到以下的内容：HKEY_ CURRENT_USER\Software\Microsoft\Office\14.0\Word（注：如果是去除Excel的文件验证，就在注册表选择Excel）。在这里依次创建“Security\FileValidation”两个子项目，接着在右侧窗口里面新建一个名为“EnableOnLoad”的DWORD值，将键值内容设置为0，刷新注册表信息后就可以生效。
+
+
